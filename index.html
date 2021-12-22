@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Time tracking dashboard</title>
+  </head>
+  <body>
+    <main class="main-container">
+      <section class="main-grid">
+        <div class="profile-card">
+          <div class="profile-header">
+            <img
+              src="images/image-jeremy.png"
+              class="profile-img"
+              alt="Image of Jeremy"
+            />
+            <p class="profile-text">Report for</p>
+            <p class="profile-name">Jeremy Robson</p>
+          </div>
+          <div class="profile-count">
+            <p id="day" class="profile-timeline">Daily</p>
+            <p class="profile-timeline" id="profile-timeline-week">Weekly</p>
+            <p class="profile-timeline" id="profile-timeline-month">Monthly</p>
+          </div>
+        </div>
+        <div class="container-card">
+          <div class="border-container">
+            <div class="track-border track-border--work">
+              <img src="images/icon-work.svg" class="track-img" />
+            </div>
+          </div>
+          <div class="track-card">
+            <div class="track-card--second">
+              <p class="track-activity">
+                Work <span class="track-dots">...</span>
+              </p>
+              <p class="track-time" id="track-time-work">32hrs</p>
+              <p class="track-timeline">
+                Last Week - <span id="track-timeline-work">36hrs</span> 
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="container-card">
+          <div class="border-container">
+            <div class="track-border track-border--play">
+              <img src="images/icon-play.svg" class="track-img" />
+            </div>
+          </div>
+          <div class="track-card">
+            <div class="track-card--second">
+              <p class="track-activity">
+                Play <span class="track-dots">...</span>
+              </p>
+              <p class="track-time" id="track-time-play">10hrs</p>
+              <p class="track-timeline">
+                Last Week - <span id="track-timeline-play">8hrs</span> 
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="container-card">
+          <div class="border-container">
+            <div class="track-border track-border--study">
+              <img src="images/icon-study.svg" class="track-img" />
+            </div>
+          </div>
+          <div class="track-card">
+            <div class="track-card--second">
+              <p class="track-activity">
+                Study <span class="track-dots">...</span>
+              </p>
+              <p class="track-time" id="track-time-study">4hrs</p>
+              <p class="track-timeline">
+                Last Week - <span  id="track-timeline-study">7hrs</span> 
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="container-card">
+          <div class="border-container">
+            <div class="track-border track-border--exercise">
+              <img src="images/icon-exercise.svg" class="track-img" />
+            </div>
+          </div>
+          <div class="track-card">
+            <div class="track-card--second">
+              <p class="track-activity">
+                Exercise <span class="track-dots">...</span>
+              </p>
+              <p class="track-time" id="track-time-exercise">4hrs</p>
+              <p class="track-timeline" >
+                Last Week - <span id="track-timeline-exercise">5hrs</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="container-card">
+          <div class="border-container">
+            <div class="track-border track-border--social">
+              <img src="images/icon-social.svg" class="track-img" />
+            </div>
+          </div>
+          <div class="track-card">
+            <div class="track-card--second">
+              <p class="track-activity">
+                Social <span class="track-dots">...</span>
+              </p>
+              <p class="track-time" id="track-time-social">5hrs</p>
+              <p class="track-timeline"">
+                Last Week - <span  id="track-timeline-social">10hrs</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="container-card">
+          <div class="border-container">
+            <div class="track-border track-border--selfcare">
+              <img src="images/icon-self-care.svg" class="track-img" />
+            </div>
+          </div>
+          <div class="track-card">
+            <div class="track-card--second">
+              <p class="track-activity">
+                Self Care <span class="track-dots">...</span>
+              </p>
+              <p class="track-time" id="track-time-selfcare">2hrs</p>
+              <p class="track-timeline">
+                Last Week - <span id="track-timeline-selfcare">2hrs</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
