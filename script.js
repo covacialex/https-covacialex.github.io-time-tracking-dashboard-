@@ -26,10 +26,27 @@ let weeklyPrev = ["36hrs", "8hrs", "7hrs", "5hrs", "10hrs", "2hrs"];
 let monthly = ["103hrs", "23hrs", "13hrs", "11hrs", "21hrs", "7hrs"];
 let monthlyPrev = ["128hrs", "29hrs", "19hrs", "18hrs", "23hrs", "11hrs"];
 
-console.log(timelinePrev[0]);
+const changeText = function (el) {
+  el.classList.add(`profile-timeline-active`);
+
+  if (el === day) {
+    week.classList.add("profile-timeline");
+    week.classList.remove(`profile-timeline-active`);
+    month.classList.remove(`profile-timeline-active`);
+  } else if (el === week) {
+    day.classList.remove(`profile-timeline-active`);
+    month.classList.remove(`profile-timeline-active`);
+  } else if (el === month) {
+    week.classList.add("profile-timeline");
+    day.classList.remove(`profile-timeline-active`);
+    week.classList.remove(`profile-timeline-active`);
+  }
+};
 
 day.addEventListener("click", function () {
   timelinePrev.forEach((element) => (element.textContent = `Yesterday - `));
+
+  changeText(day);
 
   timeWork.textContent = daily[0];
   timePlay.textContent = daily[1];
@@ -47,6 +64,7 @@ day.addEventListener("click", function () {
 
 week.addEventListener("click", function () {
   timelinePrev.forEach((element) => (element.textContent = `Last Week - `));
+  changeText(week);
 
   timeWork.textContent = weekly[0];
   timePlay.textContent = weekly[1];
@@ -65,6 +83,8 @@ week.addEventListener("click", function () {
 
 month.addEventListener("click", function () {
   timelinePrev.forEach((element) => (element.textContent = `Last Month - `));
+
+  changeText(month);
 
   timeWork.textContent = monthly[0];
   timePlay.textContent = monthly[1];
