@@ -19,7 +19,8 @@ body {
 }
 
 .main-container {
-  margin: 10rem 20rem;
+  max-width: 86rem;
+  margin: 22rem auto;
 }
 
 .main-grid {
@@ -29,14 +30,14 @@ body {
   row-gap: 1.8rem;
   column-gap: 1.8rem;
 }
-
+/* 
 .border-container {
   position: relative;
 }
 
 .container-card {
   place-self: stretch;
-}
+} */
 
 .track-card {
   background-color: hsl(235, 46%, 20%);
@@ -147,7 +148,7 @@ body {
   color: hsl(236, 100%, 87%);
 }
 
-/* PROFILE */
+/* PROFILE CARD */
 
 .profile-card {
   grid-column: 1;
@@ -165,7 +166,7 @@ body {
 
 .profile-count {
   background-color: hsl(235, 46%, 20%);
-  height: 13.5rem;
+  height: 13.2rem;
   border-radius: 0.8rem;
 }
 
